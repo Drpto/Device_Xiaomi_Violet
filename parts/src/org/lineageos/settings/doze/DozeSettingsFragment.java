@@ -141,7 +141,6 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
     }
 
     public static class HelpDialogFragment extends DialogFragment {
-
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             return new AlertDialog.Builder(getActivity())
