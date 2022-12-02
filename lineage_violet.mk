@@ -13,7 +13,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 #$(call inherit-product, vendor/ANXCamera/config.mk)
 
 #Gapps
-#WITH_GAPPS := true
+WITH_GMS := true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
