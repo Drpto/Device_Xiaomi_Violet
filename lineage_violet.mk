@@ -15,6 +15,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 #Gapps
 WITH_GMS := true
 
+#Palyrim stuffs
+PALYRIM_BUILD_TYPE := OFFICIAL
+PALYRIM_MAINTAINER := DrOpto
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
