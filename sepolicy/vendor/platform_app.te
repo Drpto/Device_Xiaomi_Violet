@@ -6,3 +6,18 @@ binder_call(platform_app, vendor_hal_soter_qti)
 allow platform_app hal_dms_hwservice:hwservice_manager find;
 allow platform_app hal_dms_default:binder { call transfer };
 allow platform_app sysfs_kgsl:lnk_file read;
+
+allow platform_app {
+    DisplayFeatureControl
+    miui_multi_display
+    perfshielder
+    ProcessManager
+}:service_manager find;
+
+allow platform_app {
+    hal_camerapostproc_xiaomi_hwservice
+    hal_misys_hwservice
+}:hwservice_manager find;
+
+allow platform_app app_data_file:file execute;
+
