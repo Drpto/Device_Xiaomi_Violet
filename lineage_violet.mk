@@ -13,7 +13,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 #GMS Flags
-WITH_GMS := true
+#WITH_GMS := true
 
 #PalyrimOS Build TAGS
 #PALYRIM_BUILD_TYPE := OFFICIAL
