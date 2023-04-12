@@ -16,8 +16,8 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 WITH_GMS := true
 
 #PalyrimOS Build TAGS
-PALYRIM_BUILD_TYPE := OFFICIAL
-PALYRIM_MAINTAINER := DrOpto
+#PALYRIM_BUILD_TYPE := OFFICIAL
+#PALYRIM_MAINTAINER := DrOpto
 
 #Supported Device Flags (Features)
 TARGET_FACE_UNLOCK_SUPPORTED := true
