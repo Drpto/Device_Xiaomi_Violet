@@ -193,7 +193,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.violet
 
 # Firmware
-#$(call inherit-product, vendor/xiaomi-firmware/violet/firmware.mk)
+$(call inherit-product, vendor/xiaomi-firmware/violet/firmware.mk)
 
 # Framework detect
 PRODUCT_PACKAGES += \
