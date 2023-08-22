@@ -9,4 +9,6 @@ rm -rf hardware/qcom-caf/sm8150/display
 rm -rf hardware/qcom-caf/sm8150/media
 git clone https://github.com/SuperiorOS/android_hardware_qcom_audio.git -b thirteen-caf-sm8150 hardware/qcom-caf/sm8150/audio --depth=1
 git clone https://github.com/LineageOS/android_hardware_qcom_media.git -b lineage-19.1-caf-sm8150 hardware/qcom-caf/sm8150/media --depth=1
-git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b lineage-19.1-caf-sm8150 hardware/qcom-caf/sm8150/display --depth=1
+git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b lineage-20.0-caf-sm8150 hardware/qcom-caf/sm8150/display --depth=1
+rm -rf vendor/qcom/opensource/commonsys-intf/display
+git clone https://github.com/SuperiorOS/android_vendor_qcom_opensource_display-commonsys-intf.git -b thirteen vendor/qcom/opensource/commonsys-intf/display
