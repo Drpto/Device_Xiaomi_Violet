@@ -6,10 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_violet.mk
+    $(LOCAL_DIR)/droidx_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_violet-userdebug \
-    evolution_violet-user \
-    evolution_violet-eng
-    
+    droidx_violet-userdebug \
+    droidx_violet-user \
+    droidx_violet-eng
