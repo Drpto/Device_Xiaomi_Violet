@@ -13,10 +13,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
-# Inherit some common crDroid stuff
+# Inherit some common AlphsDroid stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP  := true
 TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_INCLUDE_MATLOG := false
+
+# Maintainer
+ALPHA_BUILD_TYPE := Official
+ALPHA_MAINTAINER := Dr.Opto
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
