@@ -1,5 +1,5 @@
 # vendor & Kernel stuff
-git clone https://github.com/crdroidandroid/proprietary_vendor_xiaomi_violet.git -b 14.0 vendor/xiaomi/violet --depth=1
+git clone https://github.com/Drpto/vendor_xiaomi_violet.git -b 14 vendor/xiaomi/violet --depth=1
 git clone https://github.com/crdroidandroid/android_kernel_xiaomi_violet.git -b 14.0 kernel/xiaomi/violet --depth=1
 
 # Kernel clang stuff
