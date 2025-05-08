@@ -1,0 +1,6 @@
+# Maintainer Name
+ro.droidx.maintainer=Dr.Opto
+
+#Device info.prop
+ro.droidx.chipset=Snapdragon 675
+ro.droidx.display_resolution=6.3" IPS LCD 1080x2340

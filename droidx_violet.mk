@@ -9,10 +9,16 @@
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # Inherit MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
+
+# Droidx Props
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+DROIDX_BUILD_TYPE := OFFICIAL
+# DROIDX_GAPPS := true
 
 #Device Props
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -21,7 +27,7 @@ TARGET_ENABLE_BLUR := false
 TARGET_DEBLOAT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_violet
+PRODUCT_NAME := droidx_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro

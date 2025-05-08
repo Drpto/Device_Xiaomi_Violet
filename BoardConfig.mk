@@ -107,7 +107,7 @@ USE_OPENGL_RENDERER := true
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/droidx/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
@@ -134,7 +134,7 @@ BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 PRODUCT_FS_COMPRESSION := 1
 
-ifeq ($(BUILD_WITH_GAPPS),true)
+ifeq ($(BUILD_DROIDX_GAPPS),true)
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 629145600 # 600 MB
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 419430400 # 400 MB
 BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 419430400 # 400 MB
@@ -174,6 +174,7 @@ TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/system.prop
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
@@ -197,7 +198,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+include device/droidx/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
