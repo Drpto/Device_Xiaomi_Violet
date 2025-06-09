@@ -274,7 +274,7 @@ PRODUCT_COPY_FILES += \
 
 # IR
 PRODUCT_PACKAGES += \
-    android.hardware.ir-service.example
+    android.hardware.ir-service.lineage
 
 # IRSC
 PRODUCT_COPY_FILES += \
