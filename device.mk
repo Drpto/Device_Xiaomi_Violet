@@ -159,10 +159,6 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,camera,override_format_from_reserved,true)
 
-# Config Store
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
