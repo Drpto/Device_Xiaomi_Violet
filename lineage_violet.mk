@@ -12,7 +12,7 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit MiuiCamera
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+# $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 #Device Props
 TARGET_FACE_UNLOCK_SUPPORTED := true
